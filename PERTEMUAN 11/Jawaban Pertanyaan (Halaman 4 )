@@ -1,0 +1,21 @@
+1. Sebutkan method abstrak yang terdapat di kelas abstrak Bentuk!
+→ Method abstrak yang terdapat di kelas Bentuk adalah:
+
+java
+Salin
+Edit
+abstract double luas();
+2. Jelaskan apa perbedaannya method luas di kelas Bentuk dan di kelas Lingkaran dan Tabung!
+→ Di kelas Bentuk, method luas adalah abstrak, artinya hanya deklarasinya saja yang dituliskan tanpa implementasi.
+→ Di kelas Lingkaran dan Tabung, method luas di-override dan memiliki implementasi sesuai rumus luas masing-masing bentuk.
+
+3. Jelaskan bagaimana jika method luas di kelas Tabung dihilangkan atau tidak mengimplementasikannya!
+→ Maka akan terjadi error karena Tabung merupakan kelas konkret yang meng-extend kelas abstrak Bentuk, sehingga wajib mengimplementasikan semua method abstrak dari superclass-nya (Bentuk).
+
+#Studi kasus#
+
+-Sebuah sistem kendaraan.
+-Ada kelas abstrak Kendaraan dengan method abstrak bergerak().
+-Interface Mesin memiliki method nyalakanMesin() dan matikanMesin().
+-Mobil dan Motor adalah subclass dari Kendaraan, dan juga mengimplementasikan Mesin.
+
